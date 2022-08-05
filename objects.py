@@ -73,6 +73,8 @@ class SpaceCollection:
             object.speed[0] += speedx
             object.speed[1] += speedy
             object.update()
+            if object.coordinates[0] < 0 or object.coordinates[0] > WIDTH or object.coordinates[1] < 0 or object.coordinates[1] > HEIGHT:
+                self.objects.remove(object)
 
 
 class Collection:
