@@ -7,4 +7,3 @@ def ort_vector(a, b):
     return ((b[0]-a[0])/distance(a, b), (b[1]-a[1])/distance(a, b))
 
 
-print(ort_vector((-1, -1), (-4, -5)))
